@@ -25,9 +25,14 @@
 
 - name: Include app_prereq
   ansible.builtin.import_tasks:
-    file: app_prereq.yaml
+    file: app_prereq.yml
 
 - name: Install npm
   ansible.builtin.shell: npm install
   args:
     chdir: /app
+
+- name: Include schema setup file
+  ansible.builtin.import_tasks:
+    file: schema_setup.yml
+
