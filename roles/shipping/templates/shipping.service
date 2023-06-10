@@ -10,7 +10,3 @@ SyslogIdentifier=shipping
 
 [Install]
 WantedBy=multi-user.target
-
-
-{{ lookup('aws_ssm', 'dev.shipping.DB_HOST', region='us-east-1' ) }}
-{{ lookup('aws_ssm', 'dev.shipping.DB_HOST', region='us-east-1' ) }}
