@@ -1,1 +1,2 @@
-app_user: roboshop
+component: shipping
+schema_setup: mysql
