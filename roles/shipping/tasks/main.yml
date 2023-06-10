@@ -13,7 +13,3 @@
 ##func_java
 
 
-- name: Import Common Jave
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: java
